@@ -1,0 +1,37 @@
+CREATE TABLE player(
+    id SERIAL PRIMARY KEY, 
+    name TEXT UNIQUE
+);
+
+INSERT INTO player (id, name) VALUES
+(1, 'BECKHAM'),
+(2, 'CAFU'),
+(3, 'CRUYFF'),
+(4, 'ETO'),
+(5, 'GERRARD'),
+(6, 'RAMOS'),
+(7, 'RAUL'),
+(8, 'VAN NISTELROOY'),
+(9, 'SILVA'),
+(10, 'ZIDANE'),
+(11, 'MESSI'),
+(12, 'RONALDO'),
+(13, 'NEYMAR'),
+(14, 'MBAPPE'),
+(15, 'ROBERTO CARLOS'),
+(16, 'MALDINI'),
+(17, 'INIESTA'),
+(18, 'LAMPARD'),
+(19, 'ROONEY'),
+(20, 'KROOS'),
+(21, 'MARADONA'),
+(22, 'RONALDINHO'),
+(23, 'XAVI'),
+(24, 'OWEN'),
+(25, 'KAKA'),
+(26, 'AGUERO'),
+(27, 'HENRY'),
+(28, 'LEWANDOWSKI'),
+(29, 'POGBA'),
+(30, 'BALE'),
+(31, 'BATISTUTA');
