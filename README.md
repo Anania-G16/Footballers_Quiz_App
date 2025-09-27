@@ -1,12 +1,39 @@
-# React + Vite
+Footballers Quiz Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive quiz app to test your knowledge of famous footballers’ names. Built with Vite, React, and Express, with a PostgreSQL backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Multiple-choice quiz questions about football players
+- Tracks your score and progress
+- Lightweight backend for storing questions and scores
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React + Vite  
+- **Backend:** Express.js  
+- **Database:** PostgreSQL  
+- **Styling:** CSS 
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js >= 18
+- PostgreSQL installed locally or via a cloud service
+
+### Installation
+
+1. Clone the repo
+2. Install dependencies
+   npm install
+3. Install the dotenv package and under your .env file enter these.
+  DB_USER=your_db_username
+  DB_PASSWORD=your_db_password
+  DB_NAME=football_quiz
+4. Run the postgres commands under the query.sql file inside your pgAdmin to create the tables and add the info.
+
+#This project can be scaled up by just adding players images in your file by naming them (p1, p2, p3 ...) where the numbers are the ids you give for the players in the postgres database
+then, in your database, add the values into the table by giving them id(which you named the player image) and under the name column, add the player name. Done!
+
