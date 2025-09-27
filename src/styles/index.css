@@ -1,0 +1,130 @@
+body {
+  background: radial-gradient(
+      100% 100% at var(--4-x-position) var(--4-y-position),
+      #9bdce8 0%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--5-x-position) var(--5-y-position),
+      #76ea84 0%,
+      transparent
+    ),
+    #1b253b;
+  animation-name: main;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  transition-timing-function: ease-in;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+@property --4-x-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 5.351562500000001%;
+}
+@property --4-y-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 68.28125%;
+}
+@property --5-x-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 90.546875%;
+}
+@property --5-y-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 7.890625000000001%;
+}
+:root {
+  --4-x-position: 5.351562500000001%;
+  --4-y-position: 68.28125%;
+  --5-x-position: 90.546875%;
+  --5-y-position: 7.890625000000001%;
+}
+@keyframes main {
+  25% {
+    --4-x-position: 15%;
+    --4-y-position: 15%;
+    --5-x-position: 85%;
+    --5-y-position: 80%;
+  }
+  50% {
+    --4-x-position: 80%;
+    --4-y-position: 15%;
+    --5-x-position: 15%;
+    --5-y-position: 85%;
+  }
+}
+.question {
+  display: flex;
+  width: 240px;
+  height: 320px;
+  /* justify-content: center;
+  align-items: center; */
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.choice {
+  width: 100%;
+}
+.whole-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  width: 13rem;
+  gap: 0.5rem;
+}
+.score {
+  width: 15rem;
+  font-size: 1.7rem;
+  text-align: center;
+  font-family: "Lobster Two", sans-serif;
+}
+.emoji {
+  text-align: center;
+  padding: 30px;
+  font-size: 5rem;
+}
+.gameover {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Lobster Two", sans-serif;
+}
+.gameover-container {
+  padding: 40px;
+  border: solid 1px #106112;
+  border-radius: 10%;
+  box-shadow: 2px 2px 4px #106112;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.won-container {
+  padding: 40px;
+  border: solid 1px #106112;
+  border-radius: 10%;
+  box-shadow: 2px 2px 4px #106112;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
